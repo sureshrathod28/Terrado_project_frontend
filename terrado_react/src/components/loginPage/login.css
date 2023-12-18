@@ -1,0 +1,136 @@
+.container{
+    display: flex;
+  justify-content: center;
+ 
+  min-height: 100vh; 
+  flex-wrap: wrap;
+  
+  position: relative;
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  .bird-img {
+    flex: 1;
+    max-width: 100%;
+    margin-top: 50px;
+    top: 0; 
+    left: 0; 
+    z-index: -1; 
+    order: 2;
+  }
+  @media (max-width: 500px) {
+    .bird-img {
+      visibility: hidden;
+   
+    }
+      
+  }
+  
+  .left-section {
+    flex: 1;
+    text-align: center;
+    position: relative;
+  }
+  @media (max-width: 500px) {
+    .left-section {
+      flex: 0;
+    }
+      
+  }
+  .right-section {
+    flex: 1;
+    justify-content: center;
+    order: 1;
+  }
+
+  .content{
+    margin-left: 7%;
+  }
+  h1{
+    font-family: cursive;
+    
+  }
+  @media (max-width: 360px) {
+    h1 {
+      margin-left: 50px;
+    }
+  }
+h2{
+    font-family: sans-serif;
+}
+@media (max-width: 360px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+input[type="email"],
+input[type="password"]{
+    border: none; 
+  border-bottom: 2px solid #000;
+  outline: none; 
+  padding: 8px; 
+ width: 300px;
+}  
+@media (max-width:360px){
+  input[type="email"],
+input[type="password"]{
+  width: 250px;
+}
+}
+.forgot{
+    margin-left: 190px;
+    color: blue;
+    cursor: pointer;
+}
+@media (max-width:360px){
+  .forgot{
+    margin-left: 150px;
+  }
+}
+.submit{
+    border-radius: 18px;
+    background-color: gray;
+    color: white;
+    width: 120px;
+    height: 28px;
+    border: none;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+.or-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    margin-top: 50px;
+  }
+ @media (max-width:360px){
+  .or-container{
+    width: 280px;
+  }
+ } 
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+    margin: 0 5px;
+  }
+  
+  .or-text {
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0 5px; 
+  }
+
+.signup{
+    margin-top: 20px;
+    margin-left: 7.5%;
+}
+  
+  
